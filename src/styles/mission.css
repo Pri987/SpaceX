@@ -1,0 +1,18 @@
+.missionTags{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+.imag{
+    background-color: lightgrey;
+}
+.imgTag{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(57, 57, 185);
+}
+
+.span{
+    color:blue;
+    font-weight: lighter;
+}

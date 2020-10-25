@@ -1,0 +1,74 @@
+    .heading{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  .filter{
+    margin-left: 20px; 
+    font-size: 30px;
+  }
+
+  .container {
+color : black;
+max-width: 300px;
+height: 1000px;
+background-color: white;
+margin:2%;
+border : 1px solid black;
+border-radius:5px
+}
+
+.mission {
+  color : black;
+  max-width: 300px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 2%;
+  border : 1px solid black;
+  border-radius:5px
+  }
+
+.text{
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+  .fetch-button {
+    width:30%;
+    margin: 0 5% 5% 12%;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 20px;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgreen;
+    border: none;
+    display:block
+  }
+  
+  .fetch-button:hover {
+    background-color: rgb(40, 209, 82);
+  }
+
+ #image{
+  display: block;
+  margin: auto;
+  margin-top:40px;
+  width: 50%;
+ }
+
+ img ~ p{
+   margin-left: 40px;
+ }
+
+ .developer{
+  font-size: 35px; 
+  text-align: center;
+ }
+
+ .clearfix{
+   clear:both;
+ }
