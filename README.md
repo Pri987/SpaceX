@@ -5,7 +5,8 @@ Project is responsive and has different view as per Desktop, Tablet and mobile(m
 Different filters have been applied which renders page without refreshing and changesURL.
 First time load is server side rendering and is implemented using Express.
 Heroku is used for hosting platform.
-eslint is used in project to detect errors and fix code as per some coding standards.
+Eslint is used in project to detect errors and fix code as per some coding standards.
+Lighthouse Score screenshot: https://ibb.co/qn9rgTz
 
 ## Available Scripts
 
