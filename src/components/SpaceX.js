@@ -109,10 +109,10 @@ class SpaceX extends React.Component {
     };
     let StyleMissions = {
       display: 'grid',
-      marginRight:'10px',
+      marginRight: '10px',
       gridGap: '10px'
     };
-    
+
     if (isMobile) {
       StyleOuter.gridTemplateColumns = '1fr';
       StyleMissions.gridTemplateColumns = '1fr';
@@ -156,13 +156,15 @@ class SpaceX extends React.Component {
             <button className="fetch-button" name="landPass" onClick={this.fetchDataForLanding}>True</button>
             <button className="fetch-button" name="landFail" onClick={this.fetchDataForLanding}>False</button>
           </div>
-          <div class="missionContainer" style={StyleMissions}>
+          <div className="missionContainer" style={StyleMissions}>
             {this.state.data && this.state.data.map((item) => {
               return <Mission num={item.flight_number} name={item.mission_name} img={item.links.mission_patch}
                 id={item.mission_id} year={item.launch_year} launch={item.launch_success} landing={item.launch_landing} />
             })}
-          </div></div>
-        <p className="developer">Developed By: Priyanka</p></div>
+          </div>
+        </div>
+        <p className="developer">Developed By: Priyanka</p>
+      </div>
     );
   }
 }

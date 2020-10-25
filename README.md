@@ -1,6 +1,11 @@
 # SpaceX
 This project shows SpaceX missions according to particular filters.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project is responsive and has different view as per Desktop, Tablet and mobile(mobile-first-approach.)
+Different filters have been applied which renders page without refreshing and changesURL.
+First time load is server side rendering and is implemented using Express.
+Heroku is used for hosting platform.
+eslint is used in project to detect errors and fix code as per some coding standards.
 
 ## Available Scripts
 

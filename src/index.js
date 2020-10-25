@@ -4,7 +4,7 @@ import './index.css';
 import SpaceX from './components/SpaceX';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <SpaceX />
   </React.StrictMode>,
