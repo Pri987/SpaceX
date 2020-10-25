@@ -8,7 +8,7 @@ const mission = (props) => {
             <p className="imgTag">{props.name}#{props.num}</p>
             <p className="missionTags">Mission Ids :  </p><span className="span">
                 <ul>{props.id && props.id.map((item) => {
-                    return <li>{item}</li>
+                    return <li key={props.num}>{item}</li>
                 })}</ul></span>
             <p className="missionTags">Launch Year:<span className="span"> {props.year}</span></p>
             <p className="missionTags">Successful Launch:<span className="span">  {props.launch.toString()}</span></p>
