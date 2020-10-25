@@ -16,8 +16,6 @@ class SpaceX extends React.Component {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
-  // make sure to remove the listener
-  // when the component is not mounted anymore
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleWindowSizeChange);
   }
@@ -31,7 +29,7 @@ class SpaceX extends React.Component {
       .then(response => response.json())
       .then(data => this.setState({ data }));
   }
-
+  //function to fetch data when any year buton is pressed
   fetchInfo = (event) => {
     const buttonClickedId = Number(event.currentTarget.innerHTML);
     const totalButtonIds = document.getElementsByClassName("fetch-button");
@@ -45,7 +43,7 @@ class SpaceX extends React.Component {
     }
     this.getFilteredData();
   }
-
+  //to handle button state and fetch data as per button state in case of mission launch
   fetchDataForLaunch = (event) => {
     const buttonClickedId = event.currentTarget.innerHTML;
     const totalButtonIds = document.getElementsByClassName("fetch-button");
@@ -62,6 +60,7 @@ class SpaceX extends React.Component {
   }
 
 
+  //to handle button state and fetch data as per button state in case of mission land
   fetchDataForLanding = (event) => {
     const buttonClickedId = event.currentTarget.innerHTML;
     const totalButtonIds = document.getElementsByClassName("fetch-button");
@@ -77,6 +76,7 @@ class SpaceX extends React.Component {
     this.getFilteredData();
   }
 
+  //to handle and fetch data as per various filters 
   getFilteredData = () => {
     if (this.state.launchSuccess && this.state.landSuccess && this.state.year == "2014") {
       fetch('https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true')
